@@ -2,7 +2,7 @@ import React from 'react';
 import { PiCheckCircleFill, PiWarningFill, PiXCircleFill, PiInfoFill } from 'react-icons/pi';
 
 interface Banner {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   variant: 'success' | 'warning' | 'error' | 'neutral';
 }
 
@@ -35,7 +35,7 @@ const Banner = ({ variant, children }: Banner) => {
         {renderBannerIcon()}
         {childrenArray[0]}
 
-        {childrenArray.length > 1 && <div className='col-start-2'>{childrenArray.slice(1).map((child) => child)}</div>}
+        {childrenArray.length > 1 && <div className='col-start-2'>{childrenArray.splice(1).map((child) => child)}</div>}
       </div>
     </div>
   ) : null;
