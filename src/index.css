@@ -6,6 +6,11 @@
 @tailwind utilities;
 
 
+:root {
+    --font-marker: "Permanent Marker", sans-serif;
+    --font-inter: "Inter", sans-serif;
+}
+
 @layer base {
     body {
         @apply bg-[#E5E7EB]
