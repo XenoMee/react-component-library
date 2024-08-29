@@ -14,6 +14,14 @@ export default {
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({}),
         addComponents({
+          '.h1': {
+            '@apply font-marker text-3xl sm:text-5xl wide:text-7xl font-bold leading-none': {},
+          },
+
+          '.h2': {
+            '@apply font-marker text-lg sm:text-xl wide:text-2xl font-bold leading-tight': {},
+          },
+
           '.badge': {
             '@apply py-2 px-6 text-lg font-bold leading-[1.5]': {},
           },
