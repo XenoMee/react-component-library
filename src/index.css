@@ -56,3 +56,16 @@
 .badge-pink {
   @apply bg-pink-200 text-pink-900;
 }
+
+.banner-success {
+  @apply bg-green-300 text-green-700;
+}
+.banner-warning {
+  @apply bg-yellow-300 text-yellow-700;
+}
+.banner-error {
+  @apply bg-red-300 text-red-700;
+}
+.banner-neutral {
+  @apply bg-blue-300 text-blue-700;
+}
