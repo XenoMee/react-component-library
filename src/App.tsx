@@ -1,5 +1,5 @@
-import React from 'react';
 import BadgesBlock from './Components/BadgesBlock';
+import BannerBlock from './Components/BannersBlock';
 
 const App = () => {
   return (
@@ -7,6 +7,7 @@ const App = () => {
       <h1 className='h1'>React Component Library</h1>
       <div className='grid gap-20'>
         <BadgesBlock />
+        <BannerBlock />
       </div>
     </main>
   );
