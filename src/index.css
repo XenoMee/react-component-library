@@ -23,7 +23,7 @@
 
 @layer base {
     body {
-        @apply bg-[#E5E7EB]
+        @apply bg-[#E5E7EB] text-base font-inter leading-normal
     }
 }
 
