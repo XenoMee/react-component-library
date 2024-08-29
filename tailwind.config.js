@@ -23,7 +23,7 @@ export default {
           },
 
           '.badge': {
-            '@apply py-2 px-6 text-lg font-bold leading-[1.5]': {},
+            '@apply py-2 px-6 font-bold': {},
           },
         }),
         addUtilities({});
