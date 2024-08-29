@@ -22,6 +22,10 @@ export default {
             '@apply font-marker text-xl sm:text-2xl md:text-3xl font-bold leading-tight': {},
           },
 
+          '.h3': {
+            '@apply text-[#5E5D5D] font-marker text-lg sm:text-xl md:text-2xl font-medium leading-tight': {},
+          },
+
           '.badge': {
             '@apply py-2 px-6 font-bold': {},
           },
