@@ -53,6 +53,10 @@ export default {
           '.badge': {
             '@apply py-2 px-6 font-bold': {},
           },
+
+          '.banner': {
+            '@apply p-4': {},
+          },
         }),
         addUtilities({});
     }),
