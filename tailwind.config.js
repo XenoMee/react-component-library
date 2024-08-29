@@ -19,7 +19,8 @@ export default {
           },
 
           '.h2': {
-            '@apply font-marker text-xl sm:text-2xl md:text-3xl font-bold leading-tight': {},
+            '@apply font-marker text-xl sm:text-2xl md:text-3xl font-bold leading-tight underline underline-offset-4':
+              {},
           },
 
           '.h3': {
