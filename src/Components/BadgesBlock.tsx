@@ -11,12 +11,12 @@ const BadgesBlock = () => {
   return (
     <div className='grid gap-10'>
       <h2 className='h2'>Badges</h2>
-      <div className='grid gap-4'>
+      <div className='grid md:gap-4 xxs:gap-10'>
         {Object.entries(badgeTypes).map(([type, colors], index) => {
           return (
-            <div key={index} className='flex gap-10 items-center'>
+            <div key={index} className='flex-container'>
               <h3 className='h3'>{type.toUpperCase()}:</h3>
-              <div className='flex gap-4 items-center'>
+              <div className='flex-item'>
                 {colors.map((color) => {
                   return (
                     <Badge key={color} shape='pill' color={`${color}`}>
