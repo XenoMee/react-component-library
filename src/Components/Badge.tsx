@@ -10,7 +10,7 @@ interface Badge {
 const Badge = ({ children, shape, color }: Badge) => {
   const badgeClasses = classNames({
     'rounded-full': shape === 'pill',
-    'rounded-sm': shape === 'square',
+    'rounded-md': shape === 'square',
     [`badge-${color}`]: color,
   });
 
