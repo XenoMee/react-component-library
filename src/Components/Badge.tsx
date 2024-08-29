@@ -14,7 +14,11 @@ const Badge = ({ children, shape, color }: Badge) => {
     [`badge-${color}`]: color,
   });
 
-  return <div className={`badge ${badgeClasses}`}>{children}</div>;
+  return (
+    <div className={`badge ${badgeClasses}`}>
+      <p>{children}</p>
+    </div>
+  );
 };
 
 export default Badge;
