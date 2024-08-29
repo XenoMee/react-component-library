@@ -24,6 +24,10 @@ export default {
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({}),
         addComponents({
+          '.container': {
+            '@apply max-w-[70rem] mx-auto py-6 px-5 sm:p-10 lg:max-w-[85rem] wide:max-w-[95rem]': {},
+          },
+
           '.h1': {
             '@apply font-marker text-center text-2xl sm:text-3xl md:text-5xl wide:text-7xl font-bold leading-none': {},
           },
