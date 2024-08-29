@@ -15,11 +15,11 @@ export default {
       addBase({}),
         addComponents({
           '.h1': {
-            '@apply font-marker text-3xl sm:text-5xl wide:text-7xl font-bold leading-none': {},
+            '@apply font-marker text-3xl sm:text-5xl xl:text-7xl font-bold leading-none': {},
           },
 
           '.h2': {
-            '@apply font-marker text-lg sm:text-xl wide:text-2xl font-bold leading-tight': {},
+            '@apply font-marker text-lg sm:text-xl xl:text-2xl font-bold leading-tight': {},
           },
 
           '.badge': {
