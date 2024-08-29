@@ -8,23 +8,34 @@ export default {
       marker: 'var(--font-marker)',
       inter: 'var(--font-inter)',
     },
-    extend: {},
+    extend: {
+      screens: {
+        xxs: '320px',
+        xs: '375px',
+        ss: '650px',
+        sm: '850px',
+        md: '1060px',
+        lg: '1200px',
+        wide: '1440px',
+      },
+    },
   },
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({}),
         addComponents({
           '.h1': {
-            '@apply font-marker text-center text-2xl sm:text-3xl md:text-5xl xl:text-7xl font-bold leading-none': {},
+            '@apply font-marker text-center text-2xl sm:text-3xl md:text-5xl wide:text-7xl font-bold leading-none': {},
           },
 
           '.h2': {
-            '@apply font-marker text-xl sm:text-2xl md:text-3xl font-bold leading-tight underline underline-offset-4':
+            '@apply font-marker text-xl sm:text-2xl md:text-3xl wide:text-5xl font-bold leading-tight underline underline-offset-4':
               {},
           },
 
           '.h3': {
-            '@apply text-[#5E5D5D] font-marker text-lg sm:text-xl md:text-2xl font-medium leading-tight': {},
+            '@apply text-[#5E5D5D] font-marker text-lg sm:text-xl md:text-2xl wide:text-3xl font-medium leading-tight':
+              {},
           },
 
           '.badge': {
