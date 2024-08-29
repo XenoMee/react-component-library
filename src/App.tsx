@@ -5,7 +5,7 @@ const App = () => {
   return (
     <main className='min-h-svh grid place-content-center'>
       <div className='flex gap-4 items-center'>
-        <Badge shape='square' variant='red'>
+        <Badge shape='square' color='red'>
           Badge
         </Badge>
       </div>
