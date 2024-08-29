@@ -11,6 +11,16 @@
     --font-inter: "Inter", sans-serif;
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
 @layer base {
     body {
         @apply bg-[#E5E7EB]
