@@ -1,10 +1,12 @@
 import Badge from './Badge';
 import capitalizeWord from '../Utilities/capitalizeWord';
 
+type BadgeShape = 'square' | 'pill';
+
 const BadgesBlock = () => {
   const colors: string[] = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
 
-  const badgeTypes = {
+  const badgeTypes: Record<BadgeShape, string[]> = {
     square: colors,
     pill: colors,
   };
@@ -20,7 +22,7 @@ const BadgesBlock = () => {
               <div className='flex-item'>
                 {colors.map((color) => {
                   return (
-                    <Badge key={color} shape='pill' color={`${color}`}>
+                    <Badge key={color} shape={`${type as BadgeShape}`} color={`${color}`}>
                       Badge
                     </Badge>
                   );
