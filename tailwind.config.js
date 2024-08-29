@@ -15,7 +15,7 @@ export default {
       addBase({}),
         addComponents({
           '.h1': {
-            '@apply font-marker text-2xl sm:text-3xl md:text-5xl xl:text-7xl font-bold leading-none': {},
+            '@apply font-marker text-center text-2xl sm:text-3xl md:text-5xl xl:text-7xl font-bold leading-none': {},
           },
 
           '.h2': {
