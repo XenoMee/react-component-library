@@ -5,7 +5,7 @@ const App = () => {
   return (
     <main className='container grid gap-20 justify-center'>
       <h1 className='h1'>React Component Library</h1>
-      <div className='components'>
+      <div className='grid gap-20'>
         <BadgesBlock />
       </div>
     </main>
