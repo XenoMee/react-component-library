@@ -4,6 +4,10 @@ import plugin from 'tailwindcss/plugin';
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      marker: 'var(--font-marker)',
+      inter: 'var(--font-inter)',
+    },
     extend: {},
   },
   plugins: [
