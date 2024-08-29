@@ -1,14 +1,12 @@
 import React from 'react';
-import Badge from './Components/Badge';
+import BadgesBlock from './Components/BadgesBlock';
 
 const App = () => {
   return (
-    <main className='min-h-svh grid justify-center'>
+    <main className='grid gap-20 justify-center'>
       <h1 className='h1'>React Component Library</h1>
-      <div className='flex gap-4 items-center'>
-        <Badge shape='square' color='red'>
-          Badge
-        </Badge>
+      <div className='components'>
+        <BadgesBlock />
       </div>
     </main>
   );
