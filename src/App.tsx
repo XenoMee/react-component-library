@@ -1,6 +1,7 @@
 import BadgesBlock from './Components/Badge/BadgesBlock';
 import BannerBlock from './Components/Banner/BannersBlock';
 import CardBlock from './Components/Card/CardBlock';
+import TestimonialBlock from './Components/Testimonial/TestimonialBlock';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <BadgesBlock />
         <BannerBlock />
         <CardBlock />
+        <TestimonialBlock />
       </div>
     </main>
   );
