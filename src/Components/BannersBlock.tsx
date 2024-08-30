@@ -5,25 +5,11 @@ type Variant = 'success' | 'warning' | 'error' | 'neutral';
 
 const BannersBlock = () => {
   const variants: Variant[] = ['success', 'warning', 'error', 'neutral'];
-
-  const renderBannerTitle = (modifier: Variant) => {
-    switch (modifier) {
-      case 'success':
-        return 'Congratulations!';
-        break;
-
-      case 'warning':
-        return 'Attention!';
-        break;
-
-      case 'error':
-        return 'There is a problem with your application.';
-        break;
-
-      case 'neutral':
-        return 'Update available';
-        break;
-    }
+  const bannerTitles: Record<Variant, string> = {
+    success: 'Congratulations!',
+    warning: 'Attention!',
+    error: 'There is a problem with your application.',
+    neutral: 'Update available',
   };
 
   return (
@@ -34,7 +20,7 @@ const BannersBlock = () => {
           <div key={variant} className='grid grid-cols-[.15fr_1fr] gap-10 items-center'>
             <h3 className='h3 justify-self-end'>{capitalizeWord(variant)}</h3>
             <Banner variant={`${variant}`}>
-              <h4>{renderBannerTitle(variant)}</h4>
+              <h4 className='leading-tight font-semibold'>{bannerTitles[variant]}</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.</p>
             </Banner>
           </div>
