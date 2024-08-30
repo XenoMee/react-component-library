@@ -30,7 +30,7 @@ const Banner = ({ variant, children }: Banner) => {
   };
 
   return children ? (
-    <div className={`banner banner-${variant}`}>
+    <div className={`banner banner-${variant} rounded-lg`}>
       <div className='grid grid-cols-[min-content_1fr] gap-4 items-center'>
         {renderBannerIcon()}
         {childrenArray[0]}
