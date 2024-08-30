@@ -1,44 +1,31 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { PiCheckCircleFill, PiWarningFill, PiXCircleFill, PiInfoFill } from 'react-icons/pi';
 
-interface Banner {
+interface BannerProps {
   children?: React.ReactNode;
   variant: 'success' | 'warning' | 'error' | 'neutral';
+  icon?: React.ReactNode;
+  className?: string;
 }
 
-const Banner = ({ variant, children }: Banner) => {
-  const childrenArray = React.Children.toArray(children);
-
-  const renderBannerIcon = () => {
-    switch (variant) {
-      case 'success':
-        return <PiCheckCircleFill style={{ fill: '#34D399' }} />;
-        break;
-
-      case 'warning':
-        return <PiWarningFill style={{ fill: '#FBBF24' }} />;
-        break;
-
-      case 'error':
-        return <PiXCircleFill style={{ fill: '#F87171' }} />;
-        break;
-
-      case 'neutral':
-        return <PiInfoFill style={{ fill: '#60A5FA' }} />;
-        break;
-    }
+const Banner: FC<BannerProps> = ({ className = '', icon, variant, children }) => {
+  const icons = {
+    success: <PiCheckCircleFill className='fill-green-400' />,
+    warning: <PiWarningFill className='fill-yellow-400' />,
+    error: <PiXCircleFill className='fill-red-400' />,
+    neutral: <PiInfoFill className='fill-blue-400' />,
   };
 
-  return children ? (
-    <div className={`banner banner-${variant} rounded-lg`}>
-      <div className='grid grid-cols-[min-content_1fr] gap-4 items-center'>
-        {renderBannerIcon()}
-        {childrenArray[0]}
+  const renderIcon = icon ?? icons[variant];
 
-        {childrenArray.length > 1 && <div className='col-start-2'>{childrenArray.splice(1).map((child) => child)}</div>}
+  return (
+    <div className={`banner banner-${variant} rounded-lg ${className}`}>
+      <div className='grid grid-cols-[min-content_1fr] gap-4 items-start'>
+        <div>{renderIcon}</div>
+        <div className='grid gap-4'>{children}</div>
       </div>
     </div>
-  ) : null;
+  );
 };
 
 export default Banner;
