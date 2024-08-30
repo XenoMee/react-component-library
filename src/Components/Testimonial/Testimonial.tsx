@@ -20,7 +20,7 @@ const Testimonial: FC<TestimonialProps> = ({ src, alt, icon, accentColor, childr
       className={`max-w-[70rem] grid ${
         !src
           ? 'gap-8 py-16 ss:text-center text-[#111827] bg-white'
-          : `bg-${accentColor} text-white sm:grid-cols-[.5fr_1fr] sm:gap-40`
+          : `bg-blue-700 text-white sm:grid-cols-[.5fr_1fr] sm:gap-40`
       } p-4 rounded-lg shadow-md font-medium relative`}
     >
       {src ? (
@@ -33,7 +33,7 @@ const Testimonial: FC<TestimonialProps> = ({ src, alt, icon, accentColor, childr
           <img src={`${icon}`} alt='' />
           <h3 className='font-bold'>
             {capitalizeWord(company.slice(0, 4))}
-            <span className={`text-${accentColor}`}>{company.slice(4)}</span>
+            <span className={`${accentColor}`}>{company.slice(4)}</span>
           </h3>
         </div>
       )}
@@ -47,7 +47,7 @@ const Testimonial: FC<TestimonialProps> = ({ src, alt, icon, accentColor, childr
           }`}
         >
           <p>{name}</p>
-          {!src && <CgFormatSlash className={`hidden ss:inline-block w-6 h-6 text-${accentColor}`} />}
+          {!src && <CgFormatSlash className={`hidden ss:inline-block w-6 h-6 ${accentColor}`} />}
           <p className={`${!src ? 'text-[#6B7280]' : ''}`}>
             {capitalizeWord(company)}, {job}
           </p>
