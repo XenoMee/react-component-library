@@ -1,3 +1,3 @@
-const capitalizeWord = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
+const capitalizeWord = (str: string) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 
 export default capitalizeWord;
