@@ -9,7 +9,7 @@ type CardProps = {
 
 const Card: FC<CardProps> = ({ icon, className = '', iconStyle, children }) => {
   return (
-    <div className={`card ${className}`}>
+    <div className={`card ${className} transition-all`}>
       {icon && <div className={`card-icon ${iconStyle}`}>{icon}</div>}
 
       <div className='grid gap-4'>{children}</div>
