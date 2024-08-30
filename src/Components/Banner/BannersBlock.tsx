@@ -17,8 +17,8 @@ const BannersBlock = () => {
       <h2 className='h2'>Banners</h2>
       {variants.map((variant) => {
         return (
-          <div key={variant} className='grid grid-cols-[.15fr_1fr] gap-10 items-center'>
-            <h3 className='h3 justify-self-end'>{capitalizeWord(variant)}</h3>
+          <div key={variant} className='grid ss:grid-cols-[.15fr_1fr] xxs:gap-6 ss:gap-10 items-center'>
+            <h3 className='h3 xxs:justify-self-center ss:justify-self-end'>{capitalizeWord(variant)}</h3>
             <Banner variant={`${variant}`}>
               <h4 className='leading-tight font-semibold'>{bannerTitles[variant]}</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.</p>
