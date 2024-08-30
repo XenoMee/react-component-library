@@ -1,5 +1,5 @@
 import Banner from './Banner';
-import capitalizeWord from '../Utilities/capitalizeWord';
+import capitalizeWord from '../../Utilities/capitalizeWord';
 
 type Variant = 'success' | 'warning' | 'error' | 'neutral';
 

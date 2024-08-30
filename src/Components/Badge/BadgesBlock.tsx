@@ -1,5 +1,5 @@
 import Badge from './Badge';
-import capitalizeWord from '../Utilities/capitalizeWord';
+import capitalizeWord from '../../Utilities/capitalizeWord';
 
 type BadgeShape = 'square' | 'pill';
 
