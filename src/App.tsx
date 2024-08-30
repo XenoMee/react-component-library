@@ -1,5 +1,6 @@
 import BadgesBlock from './Components/BadgesBlock';
 import BannerBlock from './Components/BannersBlock';
+import CardBlock from './Components/CardBlock';
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <div className='grid gap-20'>
         <BadgesBlock />
         <BannerBlock />
+        <CardBlock />
       </div>
     </main>
   );
