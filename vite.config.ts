@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'https://xenomee.github.io/{repository_name}/',
+  base: 'https://xenomee.github.io/react-component-library/',
 });
