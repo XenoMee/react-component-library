@@ -3,16 +3,27 @@ import { BiSolidQuoteAltLeft } from 'react-icons/bi';
 import capitalizeWord from '../../Utilities/capitalizeWord';
 import { CgFormatSlash } from 'react-icons/cg';
 
-interface TestimonialProps {
-  src?: string;
-  alt?: string;
-  icon?: string;
+interface TestimonialBaseProps {
   children: React.ReactNode;
   name: string;
   company: string;
   job: string;
+  alt?: string;
   accentColor?: string;
 }
+
+interface TestimonialWithSrc extends TestimonialBaseProps {
+  src: string;
+  icon?: never;
+}
+
+interface TestimonialWithIcon extends TestimonialBaseProps {
+  src?: never;
+  icon: string;
+}
+
+// Union type that combines both cases
+type TestimonialProps = TestimonialWithSrc | TestimonialWithIcon;
 
 const Testimonial: FC<TestimonialProps> = ({ src, alt, icon, accentColor, children, name, company, job }) => {
   return (

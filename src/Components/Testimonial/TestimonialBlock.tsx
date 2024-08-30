@@ -5,8 +5,9 @@ const TestimonialBlock = () => {
     <div className='grid xxs:gap-28 sm:gap-14 md:gap-20 xl:gap-24'>
       <h2 className='h2'>Testimonial</h2>
       <Testimonial
+        src='./images/May_Anderson_Mobile.png'
+        alt='May Anderson'
         accentColor='text-blue-700'
-        icon='./images/house-palm.svg'
         name='May Anderson'
         company='Workcation'
         job='CTO'
