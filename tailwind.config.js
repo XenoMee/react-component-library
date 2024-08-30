@@ -57,6 +57,15 @@ export default {
           '.banner': {
             '@apply p-4': {},
           },
+
+          '.card': {
+            '@apply max-w-96 grid gap-6 px-6 pb-8 pt-16 relative bg-white shadow-md text-center text-[#6B7280] z-0 justify-self-center rounded-lg':
+              {},
+          },
+
+          '.card-icon': {
+            '@apply p-3 absolute rounded-lg justify-self-center z-10 top-[-1.3rem]': {},
+          },
         }),
         addUtilities({});
     }),
