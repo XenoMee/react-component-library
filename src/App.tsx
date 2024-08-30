@@ -1,6 +1,6 @@
-import BadgesBlock from './Components/BadgesBlock';
-import BannerBlock from './Components/BannersBlock';
-import CardBlock from './Components/CardBlock';
+import BadgesBlock from './Components/Badge/BadgesBlock';
+import BannerBlock from './Components/Banner/BannersBlock';
+import CardBlock from './Components/Card/CardBlock';
 
 const App = () => {
   return (
